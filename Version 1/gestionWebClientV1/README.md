@@ -1,19 +1,26 @@
-# gestionWebService
-
-Client du WebService contenant le site web du projet GestionEnsup
+# gestionWebClient V1
+Ce projet est le client du WebService contenant le site web du projet GestionEcole
 
 ## Prérequis
 
 - JDK 8
 - Maven 3.6.3
 - Apache Tomcat 9 configuré sur le port 8080
+- Serveur de base de données installé
 
 ## Installation
 
-1. Cloner le dépôt
-2. A la racine du projet, ouvrir un invite de commande et taper l'instruction `mvn clean package` pour compiler le projet
-3. Une fois compilé, copier le fichier `gestionWebService\web\target\gestionWebClient.war` dans le dossier **webapps** du serveur Tomcat
-4. Lancer le serveur Tomcat pour déployer le projet sur le serveur
-5. Ouvrir un navigateur et entrer `http://127.0.0.1:8080/gestionWebClient` dans la barre d'URL pour accéder à l'application
+PARTIE BASE DE DONNEES
 
+1. Récupérez le fichier .sql présent à la racine du projet
+2. Créez une base de données au nom de 'jpagestionensup'
+3. A partir de cette nouvelle base de données, dans la section SQL, collez le contenu du fichier .sql que vous venez de récupérer.
+
+PARTIE PROJET
+
+Clonez le dépôt
+Compilez le projet: Pour ce faire, rendez-vous à la racine du projet, ouvrez une invite de commande et tapez la commande mvn clean package.
+Une fois le projet compilé, copier le fichier gestionWebClientV1\webclient\target\webclient.war dans le dossier webapps de votre serveur Tomcat.
+Lancer le serveur Tomcat à l'aide du fichier startup.bat.
+Ouvrez un navigateur web et entrez l'adresse http://127.0.0.1:8080/webclient dans la barre d'URL pour accéder à l'application
 Remarque : Pour pouvoir se connecter à l'application, il faut qu'il existe au moins une entrée "User" dans la base de données avec le rôle "R" ou "D"
