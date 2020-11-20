@@ -19,8 +19,7 @@ PARTIE BASE DE DONNEES
 PARTIE PROJET
 
 Clonez le dépôt
-Compilez le projet: Pour ce faire, rendez-vous à la racine du projet, ouvrez une invite de commande et tapez la commande mvn clean package.
-Une fois le projet compilé, copier le fichier gestionWebClientV1\webclient\target\webclient.war dans le dossier webapps de votre serveur Tomcat.
-Lancer le serveur Tomcat à l'aide du fichier startup.bat.
-Ouvrez un navigateur web et entrez l'adresse http://127.0.0.1:8080/webclient dans la barre d'URL pour accéder à l'application
-Remarque : Pour pouvoir se connecter à l'application, il faut qu'il existe au moins une entrée "User" dans la base de données avec le rôle "R" ou "D"
+1. Compilez le projet: Pour ce faire, rendez-vous à la racine du projet, ouvrez une invite de commande et tapez la commande mvn clean package.
+2. Une fois le projet compilé, copier le fichier gestionWebClientV1\webclient\target\webclient.war dans le dossier webapps de votre serveur Tomcat.
+3. Lancer le serveur Tomcat à l'aide du fichier startup.bat.
+4. Ouvrez un navigateur web et entrez l'adresse http://127.0.0.1:8080/webclient dans la barre d'URL pour accéder à l'application
